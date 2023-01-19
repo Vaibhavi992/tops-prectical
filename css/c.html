@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>indicator</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        .one{
+            font-size: 30px;
+            font-style: italic;
+            color: white;
+        }
+        .two{
+            font-size: 30px;
+            font-style: italic;
+            color: red;
+        }
+        .third{
+            font-size: 30px;
+            font-style:italic;
+            color: greenyellow;
+
+        }
+        p:hover{
+            cursor: pointer;
+            user-select: none;
+        }
+        .one:hover ~ .third{
+            background-color: wheat;
+        }
+        .two:hover ~ .third{
+            background-color: royalblue;
+        
+        }
+        
+
+    </style>
+    
+    </head>
+    <body>
+    <p class="one">WHITE</p>
+    <p class="two">RED</p>
+    <p class="third">GREEN</p> 
+    </body>
+</html>
